@@ -1,0 +1,38 @@
+.flex__center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.main__div {
+  padding: 2.5%;
+  min-height: 90vh;
+}
+.main__div__left,
+.main__div__right {
+  width: 50%;
+}
+.main__div__left > h1 {
+  font-size: 7rem;
+  line-height: 90%;
+}
+.main__div__image {
+  width: 70%;
+}
+@media screen and (max-width: 1024px) {
+  .main__div__left > h1 {
+    font-size: 6rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  .main__div__image {
+    display: none;
+  }
+  .main__div__left {
+    padding: 20px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .main__div__left > h1 {
+    font-size: 4rem;
+  }
+}
