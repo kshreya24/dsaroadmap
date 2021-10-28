@@ -9,9 +9,9 @@ function Navbar() {
     const [position, setPosition] = useState(false)
     const scrollDistance = () => {
         const windowHeight = window.innerHeight;
-        console.log(windowHeight);
+        // console.log(windowHeight);
         let scroll = window.scrollY;
-        console.log(scroll);
+        // console.log(scroll);
         if (scroll > windowHeight / 2) {
             setPosition(true)
         } else {

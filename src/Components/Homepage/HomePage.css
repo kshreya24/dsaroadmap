@@ -36,3 +36,29 @@
     font-size: 4rem;
   }
 }
+
+/* CARDSECTION */
+.card__section__master {
+  flex-direction: column;
+  width: 95%;
+  padding: 2.5%;
+}
+.card__section__master > h1 {
+  width: 100%;
+  font-size: 4rem;
+  padding: 5% 0px;
+}
+.card__section {
+  display: grid;
+  grid-template-columns: repeat(3, 0fr);
+}
+@media screen and (max-width: 1080px) {
+  .card__section {
+    grid-template-columns: repeat(2, 0fr);
+  }
+}
+@media screen and (max-width: 720px) {
+  .card__section {
+    grid-template-columns: repeat(1, 0fr);
+  }
+}
